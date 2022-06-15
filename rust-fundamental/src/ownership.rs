@@ -37,9 +37,52 @@ mod ownership {
 
         // todo: ownership & function
 
+        let ss = String::from("Hellowwwws");
 
+        take_ownerhip(ss);
+
+        
+        let x = 5;
+
+        make_copy(x);
+
+
+        let x1 = gives_ownership();
+        println!("{}",x1);   
+
+        let x2 = String::from("GGkan>");
+        let x3 = take_give_back(x2);
+        println!("{}",x3);   
+
+        let x4 = String::from("HELLO TUPLE");
+        let (s5,size) = calculate_length(x4);
+        println!("the leng of {} is {}",s5,size);
 
 
     }
+
+
+    // return tuple
+    fn calculate_length(s:String) ->(String,usize) {
+        let length = s.len();
+        return (s,length)
+    }
+
+    fn take_ownerhip(somestring: String) {
+        println!("somestring = {}",somestring);
+    }
+
+    fn make_copy(some_int: i64) {
+        println!("someINT = {}",some_int);
+    }
+
+    fn gives_ownership() -> String {
+        let sr = String::from("coooksssssssss");
+        return sr;
+    }
+    fn take_give_back(a_string: String) -> String {
+        return a_string;
+    }
+    
 
 }
