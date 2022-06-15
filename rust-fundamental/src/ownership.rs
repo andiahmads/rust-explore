@@ -35,6 +35,9 @@ mod ownership {
         println!("s1 = {}, s2 = {},",s1,s2);
 
 
+        // todo: ownership & function
+
+
 
 
     }
