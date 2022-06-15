@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "guees-game"
+		},
+		{
+			"path": "rust-hackrank"
 		}
 	]
 }
