@@ -5,7 +5,7 @@ mod references_borowwing_slice{
     fn test_references_borowwing_slice() {
 
         // tanpa references
-     /*    let s1 = String::from("hello");
+        let s1 = String::from("hello");
         let (s2, len) = calculate_length(s1);
         println!("The Lengh of {} is {}", s2,len); 
        
@@ -35,7 +35,7 @@ mod references_borowwing_slice{
         let v3 = &mut v;
         println!("{}", v3); // batas akhir imutable reference digunakan
 
- */
+
         // contoh dangle pointer
         // let reference_dangle_pointer = dangle();
 
