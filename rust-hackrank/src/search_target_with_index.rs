@@ -3,7 +3,7 @@ mod search_target_with_index{
  #[test]   
 fn test_search_target_with_index() {
     let arr = vec![1,3,4,5,6,7,8];
-    let target = 5;
+    let target = 6;
 
     let res = search_target(arr,target);
     println!("{}",res);
